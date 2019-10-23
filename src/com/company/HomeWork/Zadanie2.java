@@ -17,9 +17,9 @@ public class Zadanie2 {
     public static void main(String[] args) {
         System.out.println("Введите число: ");
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        final int n = sc.nextInt();
 
-        int fn = f(n);
+        final int fn = f(n);
 
         System.out.println("Искомое число: " + fn);
     }

@@ -6,7 +6,7 @@ public class Zadanie1 {
     public static void main(String[] args) {
         System.out.println("Введите положительное число: ");
         Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
+        final int N = scanner.nextInt();
         for (int i = 2; i < N; i++) {
             if (checkSimple(i))
                 System.out.println(i);

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Zadanie5 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String s = scan.next();
+        final String s = scan.next();
         isPalindrome(s);
     }
 
@@ -14,8 +14,6 @@ public class Zadanie5 {
         for (int i = s.length() - 1; i >= 0; --i)
             r += s.charAt(i);
         return r;
-
-
     }
 
     public static Boolean isPalindrome(String s) {
@@ -25,6 +23,5 @@ public class Zadanie5 {
             System.out.println("Не полиндром");
         }
         return s.equals(reverseString(s));
-
     }
 }
